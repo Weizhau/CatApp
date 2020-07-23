@@ -1,26 +1,15 @@
 package com.example.catapp
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
 import android.content.Context
 import android.graphics.Bitmap
-import android.graphics.Point
-import android.graphics.Rect
-import android.graphics.RectF
 import android.graphics.drawable.BitmapDrawable
 import android.provider.MediaStore
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.graphics.drawable.toBitmap
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.recycler_item.view.*
-
 
 class CatsRecyclerAdapter(
     val context: Context,
@@ -68,6 +57,4 @@ class CatsRecyclerAdapter(
         val bitmap: Bitmap = (view.drawable as BitmapDrawable).bitmap
         return bitmap
     }
-
-
 }

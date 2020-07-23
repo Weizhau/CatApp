@@ -1,7 +1,6 @@
 package com.example.catapp
 
 import android.Manifest
-import android.animation.Animator
 import android.graphics.Bitmap
 import android.os.Build
 import android.os.Bundle
